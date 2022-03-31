@@ -12,28 +12,43 @@ body {
   font-family: "Merriweather";
 }
 
+header {
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
 .banner {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: auto 4em;
 }
 
 img {
   width: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
 }
 
-.banner h1 {
-  margin: 0;
-  grid-column: 1 / 2;
+.banner h2 {
+  margin: 1rem;
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: normal;
+  color: white;
+  grid-column: 1 / -1;
   grid-row: 1;
   align-self: end;
   z-index: 1;
 }
 
 .banner p {
-  margin: 0;
-  grid-column: 1 / 2;
-  grid-row: 1;
+  margin: 1rem;
+  padding-bottom: 1.5rem;
+  color: white;
+  font-style: italic;
+  grid-column: 1 / -1;
+  grid-row: 2;
   align-self: end;
   z-index: 1;
 }
