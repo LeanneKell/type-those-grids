@@ -9,9 +9,10 @@ html {
 
 body {
   margin: 0;
+  font-family: "Merriweather";
 }
 
-div {
+.banner {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -21,7 +22,15 @@ img {
   width: 100%;
 }
 
-h1 {
+.banner h1 {
+  margin: 0;
+  grid-column: 1 / 2;
+  grid-row: 1;
+  align-self: end;
+  z-index: 1;
+}
+
+.banner p {
   margin: 0;
   grid-column: 1 / 2;
   grid-row: 1;
