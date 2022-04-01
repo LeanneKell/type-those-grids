@@ -4,22 +4,45 @@
   <meta charset="utf-8">
   <title>Type-Those-Grids</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-  <header>
+  <header role="banner">
     <h1>The Seven Wonders of the Ancient World</h1>
   </header>
 
-  <div class="banner">
-    <h2>Remarkable constructions of classical antiquity—lost in time</h2>
-    <p>Come explore the ancient wonders with our amazing teleportation technology that jumps you around the world.</p>
-    <img src="images/Maerten_van_Heemskerck_-_Panorama_with_the_Abduction_of_Helen_Amidst_the_Wonders_of_the_Ancient_World_-_Walters_37656.jpg" alt="">
-    <img class="pano" src="images/pano.jpg" alt="" role="presentation">
-  </div>
+  <main role="main">
+    <div class="banner">
+      <h2>Remarkable constructions of classical antiquity—lost in time</h2>
+      <p>Come explore the ancient wonders with our amazing teleportation technology that jumps you around the world.</p>
+      <img src="images/Maerten_van_Heemskerck_-_Panorama_with_the_Abduction_of_Helen_Amidst_the_Wonders_of_the_Ancient_World_-_Walters_37656.jpg" alt="" role="presentation">
+    </div>
+
+    <div class="container">
+      <dl>
+        <figure><img src="images/Temple_of_Artemis.jpg" alt="Temple"></figure>
+        <dt><figcaption>Temple of Artemis</figcaption></dt>
+        <dd>Construction: Circa 550 BC
+            Builders: Greeks
+            Location: Selçuk, Turkey</dd>
+
+        <figure><img src="images/Colossus_of_Rhodes.jpg" alt="Colossus"></figure>
+        <dt><figcaption>Colossus of Rhodes</figcaption></dt>
+        <dd>Construction: 292–280 BC
+          Builders: Greeks
+          Location: Rhodes, Greece</dd>
+
+        <figure><img src="images/Hanging_Gardens_of_Babylon.jpg" alt="Hanging Gardens"></figure>
+        <dt><figcaption>Gardens of Babylon</figcaption></dt>
+        <dd>Construction: Circa 600 BC
+          Builders: Babylonians
+          Location: Nineveh, Iraq</dd>
+      </dl>
+    </div>
+
+  </main>
 
 </body>
 </html>
