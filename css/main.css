@@ -12,32 +12,77 @@ body {
   margin: 0;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+header {
+  font-family: Merriweather;
+  font-size: 1.5rem;
+  font-style: italic;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "box1 box1 box1" "box2 box3 box4" "box2 box3 box4";
+}
 .banner {
-  grid-template-rows: 1fr;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
+grid-area: box1;
+grid-column: 1 / 4;
+grid-row: 1;
 }
 
 .banner img {
   width: 100%;
 }
 
-.container img {
-  width: 100%;
+.banner h2 {
+  grid-row:
+  font-family: Merriweather;
+  font-size: 1.5rem;
+  font-style: italic;
 }
 
-h2 {
-  margin: 0;
-  grid-column: 1 / 2;
-  grid-row: 2;
-  align-self: end;
-  z-index: 1;
+.banner p {
+   font-family: Merriweather;
+   font-style: italic;
+}
+
+.item figure {
+  margin-left: 0;
+}
+
+.item:nth-of-type(1) {
+  grid-area: box4;
+  font-family: Merriweather;
+}
+
+.item figcaption {
+  margin-left: 1rem;
+  align-self: center;
+  font-family: Merriweather;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.item dl {
+  padding-bottom: 1.5rem;
+  grid-row: 4;
+  margin-left: 1rem;
+  font-family: Merriweather;
+  font-style: italic;
+}
+
+.item:nth-of-type(2) {
+  grid-area: box2;
+  font-family: Merriweather;
+}
+
+.item:nth-of-type(3) {
+  grid-area: box3;
+  font-family: Merriweather;
+}
+
+.item dd {
+  grid-row: 4;
+  margin-left: 1rem;
+  font-family: Merriweather;
 }
